@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/black"
+    tools:context=".RegistroActivity">
+
+    <LinearLayout
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="50dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="Registro de Herramientas"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/registro" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblnombre"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="•	Nombre :"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_Nombre"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:backgroundTint="#fff"
+                android:inputType="textPersonName"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="• Descripción :"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_Descripcion"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:backgroundTint="#fff"
+                android:inputType="textPersonName"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="•	Precio :"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_Precio"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:backgroundTint="#fff"
+                android:inputType="textPersonName"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="•	Stock :"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_Stock"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:backgroundTint="#fff"
+                android:inputType="textPersonName"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_Calcular"
+                android:layout_width="170dp"
+                android:layout_height="55dp"
+                android:textColor="#FFFF"
+                android:backgroundTint="#F40000"
+                android:onClick="Calcular"
+                android:text="Calcular total de ganancias"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="•	Gananacias :"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_Ganancias"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:backgroundTint="#fff"
+                android:inputType="textPersonName"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_Registrar"
+                android:layout_width="170dp"
+                android:layout_height="55dp"
+                android:backgroundTint="#001FBA"
+                android:textColor="#FFFF"
+                android:onClick="Registrar"
+                android:text="Registrar Producto"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_salir"
+                android:layout_width="170dp"
+                android:layout_height="55dp"
+                android:textColor="#FFFF"
+                android:baselineAligned="false"
+                android:onClick="Salir"
+                android:backgroundTint="#044343"
+                android:text="Salir de Registro"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/btn_siguiente"
+                android:layout_width="170dp"
+                android:layout_height="55dp"
+                android:textColor="#FFFF"
+                android:baselineAligned="false"
+                android:onClick="Siguiente"
+                android:text="Actualizar un producto"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
